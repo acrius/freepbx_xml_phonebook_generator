@@ -1,12 +1,16 @@
-UPDATE_TIME_HOUR = 24
+from pymysql.cursors import DictCursor
+
+UPDATE_TIME_HOUR = 6
 UPDATE_TIME_MIN = 0
-UPDATE_TIME_SEC = 2
+UPDATE_TIME_SEC = 0
 
 
 DATABASE = {
     'host': 'localhost',
     'port': 3306,
-    'db': 'asterisk'
+    'db': 'asterisk',
+    'charset': 'utf8mb4',
+    'cursorclass': DictCursor
 }
 
 

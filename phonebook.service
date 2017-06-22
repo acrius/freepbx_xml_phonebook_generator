@@ -1,0 +1,10 @@
+[Unit]
+Description=Generate phonebook.xml from freepbx database
+After=freepbx.service
+
+[Service]
+Type=simple
+ExecStart=/home/admindok/dev/freepbx_xml_phonebook_generator/server.sh
+
+[Install]
+WantedBy=multi-user.target
